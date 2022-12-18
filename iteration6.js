@@ -14,15 +14,15 @@ const duplicates = [
     'soda'
 ];
 
-function removeDuplicates(param) {
+function removeDuplicates(array) {
 
-    let deleteDuplicates = duplicates.filter((elemento, index)=> {
-        return duplicates.indexOf(elemento) === index;
+    let deleteDuplicates = array.filter((elemento, index)=> {
+        return array.indexOf(elemento) === index;
     });
     
     console.log(deleteDuplicates);
 
 }
 
-removeDuplicates();
+removeDuplicates(duplicates);
 
