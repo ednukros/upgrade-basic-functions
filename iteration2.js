@@ -2,23 +2,24 @@
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
-function findLongestWord(param) {
 
-    avengers.sort();
-    if (avengers[0].length === avengers[1].length) {
+function findLongestWord(arrayP) {
 
-        if (avengers[0].length === avengers[1].length && avengers[1].length === avengers[2].length) {
+    arrayP.sort();
+    if (arrayP[0].length === arrayP[1].length) {
 
-            console.log(avengers[0], avengers[1], avengers[2]);
+        if (arrayP[0].length === arrayP[1].length && arrayP[1].length === arrayP[2].length) {
+
+            console.log(arrayP[0], arrayP[1], arrayP[2]);
         } else {
 
-            console.log(avengers[0], avengers[1]);
+            console.log(arrayP[0], arrayP[1]);
         }
 
     } else {
-        console.log(avengers[0]);
+        console.log(arrayP[0]);
     }
 
 }
 
-findLongestWord();
+findLongestWord(avengers);
