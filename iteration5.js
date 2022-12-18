@@ -2,11 +2,11 @@
 
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 
-function averageWord(param) {
+function averageWord(array) {
 
     let total = 0;
 
-    for (const element of mixedElements) {
+    for (const element of array) {
 
         if (typeof element === 'number') {
 
