@@ -2,10 +2,10 @@
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
-function sumAll(param) {
+function sumAll(array) {
 
     let suma = 0;
-    for (const number of numbers) {
+    for (const number of array) {
 
         suma += number;
     }
@@ -13,4 +13,4 @@ function sumAll(param) {
     console.log(suma);
 }
 
-sumAll();
+sumAll(numbers);
